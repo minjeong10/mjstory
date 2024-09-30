@@ -1,0 +1,375 @@
+
+#wrap {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* 첫번째 */
+.sub_c1 {
+  height: 1080px;
+  background-color: #BD0809;
+  background-size: auto 100%;
+}
+
+.section-2 {
+  position: relative;
+  width: 840px;
+  height: 1080px;
+  top: 100px;
+}
+
+.section-2 > .img {
+  position: absolute;
+  width: 840px;
+  height: 1080px;
+  margin-top: -100px;
+}
+
+/* switch-effect */
+.switch-effect-1-1 {
+  position: absolute;
+  color: #fff;
+  width: 600px;
+  height: 36px;
+  margin-left: 140%;
+}
+
+.switch-effect-1-1 > ul > li {
+  position: absolute;
+  opacity: 0;
+  margin-top: 64%;
+  font-size: 1.8rem;
+  text-align: left;
+  font-family: "S-CoreDream-9Black";
+  transform: translateY(100px);
+}
+
+.switch-effect-1-1 > ul > li.active {
+  position: relative;
+  opacity: 1;
+  transition: transform 0.4s, opacity 0.4s;
+  transform: translateY(0);
+}
+
+.switch-effect-1-1 > .spantext {
+  width: 579px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+
+.section-2 > .text {
+  width: 574px;
+  height: 410px;
+}
+
+.sub-1_img {
+  position:absolute;
+  width:595px;
+  height:764px;
+  top:5%;
+  left:65%;
+}
+
+
+.section-2 > .bg {
+  position: absolute;
+  width: 112px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 55%;
+  margin-left: 140%;
+}
+
+.section-2 > .spantext {
+  position: absolute;
+  width: 579px;
+  height: 180px;
+  top:40%;
+  left:140%;
+  color: #fff;
+}
+
+
+.section-2 > .spantext > p {
+  font-size: 40px;
+  margin-left: 120px;
+  font-family: "S-CoreDream-9Black";
+}
+
+.section-2 > .spantext > span {
+  margin-top: 40px;
+}
+
+/* 두번째 */
+.sub_c2 {
+  height: 1080px;
+  background-color: white;
+}
+
+.img_graph {
+  position: absolute;
+  width: 765px;
+  height: 673px;
+  background-image: url(img/aboutme/img3.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.img_graph > img {
+  width: 395px;
+  height:345px;
+  margin-top:12.2%;
+  margin-left:26.2%;
+  transform:scale(0.5);
+  transition:transform 0.8s;
+}
+
+.img_graph.active > img {
+  transform:scale(1);
+}
+
+
+.Typo {
+  height: auto;
+  float: right;
+  margin-top: 7%;
+  margin-right: 10%;
+}
+
+.Typo > .typo_preface {
+  color: #d8d8d8;
+  font-family: "S-CoreDream-7ExtraBold";
+  font-size: 23px;
+}
+
+.Typo > div > span {
+  font-size: 60px;
+  color: #222222;
+  font-family: "S-CoreDream-9Black";
+}
+
+.Typo > div > .typo_title {
+  font-size: 60px;
+}
+
+.Typo > div::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  background-color: white;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+/* text-tutle > P => css */
+.text-title_1 {
+  color: #0d2b3e;
+  line-height:2;
+  font-family: "S-CoreDream-7ExtraBold";
+}
+
+.text-title_2 {
+  color: #737373;
+  line-height:3;
+}
+
+/* 세번째 */
+
+.sub_c3 {
+  position: relative;
+  height: 900px;
+}
+
+.img-group-2 > img {
+  position: absolute;
+  height: 960px;
+  margin-left: 92%;
+}
+
+.img-group-3 > img {
+  position: absolute;
+  width: 1368px;
+  height: 381px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.img-group-4 > img {
+  position: absolute;
+  width: 1368px;
+  height: 150px;
+  margin-top: 33%;
+  margin-left: 10%;
+}
+
+
+
+/* 우측버튼 */
+
+/* 우측하단 버튼 */
+.floating-menu {
+  right:48px;
+  bottom:48px;
+  transition: 0.5s;
+}
+
+.plus-link {
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background-image:url(https://cdn.discordapp.com/attachments/841978793568763914/884702482524151838/7064ebb8a7b6c730.png);
+  background-color:#0D2B3E;
+  background-repeat:no-repeat;
+  background-size:initial;
+  background-position:center;
+  cursor:pointer;
+  transition:transform 0.5s;
+  box-sizing:border-box;
+  right:5%;
+  bottom:20px;
+}
+
+.plus-link.active {
+  background-image:none;
+}
+
+.plus-link.active::before,
+.plus-link.active::after {
+  background-color:white;
+}
+
+.plus-link::before,
+.plus-link::after {
+  content:"";
+  background-color:none;
+  position:absolute;
+  top:48%;
+  left:23%;
+  width:55%;
+  height:8%;
+  transform:rotate(135deg);
+  transition: background 0.3s;
+}
+
+.plus-link::after {
+  transform:rotate(225deg);
+}
+
+.floating-list {
+  z-index:150;
+  width:210px;
+}
+
+.floating-linker.chat > a > span > i {
+  font-size:1.3rem;
+  float:right;
+  margin-top:4px;
+  margin-left:auto;
+  margin-right:-40px;
+  padding-left:5px;
+}
+
+.floating-linker {
+  width:100%!important;
+  height:100%!important;
+}
+
+.floating-linker a {
+  display:block;
+  min-width:170px;
+  padding:14px 28px 14px 28px;
+  border:1px solid #fff;
+  border-radius:28px;
+  box-shadow:0 4px 11px 0 rgb(0 0 0 / 15%);
+  background:#fff no-repeat right 16px center;
+  text-align:center;
+}
+
+.floating-linker .text {
+  font-weight:800;
+  font-size:16px;
+  line-height:26px;
+
+}
+
+.floating-linker .text:hover {
+  background:linear-gradient(to right,  #0D2B3E, #F2D4C1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.floating-list .floating-linker:not(:first-child) {
+  margin-top:10px;
+}
+
+.main-wrap .section {
+  max-width:1460px;
+  margin:120px auto 0;
+  padding:0 40px;
+}
+
+.btn-inner {
+  right:10%;
+  bottom:140%;
+}
+
+.btn-inner.active {
+  display:block;
+}
+/* 우측 하단 버튼 끝 */
+
+/* 화살표 */
+.down-click {
+  position: fixed;
+  font-size: 2rem;
+  animation-name: click;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+  opacity: 1;
+  right:67px;
+  bottom:65px;
+  visibility:visible;
+  color:#0D2B3E;
+}
+
+@keyframes click {
+
+  0% {
+    top: 82%;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  50% {
+    top: 78%;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  100% {
+    top: 82%;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+}
+
+.down-click.active {
+  opacity:0;
+  visibility:hidden;
+}
+/* 화살표 끝 */
